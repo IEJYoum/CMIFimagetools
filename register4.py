@@ -44,6 +44,20 @@ def resize(movingA,key):
             
  
 def followPath(A,path,zLevel):
+    '''
+    ----------
+    A : array
+        average intensity values
+    path : list
+        directional map for where to shift array
+    zLevel : int
+        determines the scaling for the steps
+
+    Returns
+    -------
+    array shifted according to path
+
+    '''
     for step in path:
         if step == 1:
             for i in range(zLevel):
@@ -233,7 +247,7 @@ if __name__ == '__main__':
 #other:
 #fix filenames and make new PNG
     
-    
+#test change    
     
     
     
